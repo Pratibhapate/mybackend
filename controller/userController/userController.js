@@ -109,7 +109,7 @@ const userPut = async (req, res) => {
     });
   }
 
-  const query = "UPDATE user SET uname = ?, age = ? WHERE uid = ?";
+  const query = "UPDATE `user` SET uname = ?, age = ? WHERE uid = ?";
   const data = [uname, age, uid];
 
   try {
